@@ -1,0 +1,21 @@
+<%- include('mainTemplate'); -%>
+    <h1><%= title %></h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Permissions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= user.username %></td>
+                <td><%= user.permissions %></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <form action="/logout" method="get">
+        <button type="submit">Logout</button>
+    </form>
+<%- include('footerTemplate'); -%>
