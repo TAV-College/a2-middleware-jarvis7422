@@ -1,0 +1,21 @@
+<%- include('mainTemplate'); -%>
+
+<% if(typeof errorMsg != "undefined" && errorMsg !== '') { %>
+    <p class="error"><%=errorMsg%></p>
+<% } %>
+    <form action="/user" method="post">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password1">Password</label>
+        <input type="password" name="password1" id="password1" required>
+        <br>
+        <label for="password2">Confirm Password</label>
+        <input type="password" name="password2" id="password2" required>
+        <br>
+        <input type="submit" value="Sign Up">
+    </form>
+    <form action="/logout" method="get">
+        <button type="submit">important to Logout</button>
+    </form>
+<%- include('footerTemplate'); -%>

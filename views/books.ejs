@@ -1,0 +1,20 @@
+<%- include('mainTemplate'); -%>
+<table>  
+        <thead>
+            <tr>
+                <th>author</th>
+                <th>title</th>
+                <th>isbn</th>
+            </tr>
+        </thead>
+        <tbody>
+                <% books.forEach(function(book) { %>
+                    <tr>
+                        <td><%= book.author%></td>
+                        <td><%= book.title %></td>
+                        <td><%= book.isbn%></td>
+                    </tr>
+                <%});%>
+        </tbody>
+    </table>
+<%- include('footerTemplate'); -%>
