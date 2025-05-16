@@ -1,6 +1,5 @@
 DROP TABLE IF EXISTS books;
 
-
 CREATE TABLE books (
     id INTEGER PRIMARY KEY,
     author TEXT NOT NULL,
